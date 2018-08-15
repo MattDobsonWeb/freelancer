@@ -1,0 +1,8 @@
+// A file to check if anything is empty can be used on strings, objects, arrays etc.
+const isEmpty = value =>
+  value === undefined ||
+  value === null ||
+  (typeof value === "object" && Object.keys(value).length === 0) ||
+  (typeof value === "string" && value.trim().length === 0);
+
+module.exports = isEmpty;
